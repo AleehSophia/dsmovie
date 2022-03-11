@@ -1,7 +1,8 @@
 import MovieScore from "../MovieScore";
+import { Link } from "react-router-dom";
 
 function MovieCard() {
-    
+
     const movie = {
         id: 1,
         image: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/pe17f8VDfzbvbHSAKAlcORtBHmW.jpg",
@@ -16,7 +17,9 @@ function MovieCard() {
             <div className="dsmovie-card-bottom-container">
                 <h3>{movie.title}</h3>
                 <MovieScore />
-                <div className="btn btn-primary dsmovie-btn">Avaliar</div>
+                <Link to={`/form/${movie.id}`}>
+                    <div className="btn btn-primary dsmovie-btn">Avaliar</div>
+                </Link>
             </div>
         </div>
     );
