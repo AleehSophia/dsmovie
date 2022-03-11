@@ -4,6 +4,10 @@
   --color-primary: #0f0f0f;
 }
 
+:root {
+  --color: #fff;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
