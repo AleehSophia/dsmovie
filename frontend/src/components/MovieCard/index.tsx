@@ -1,15 +1,12 @@
 import MovieScore from "../MovieScore";
 import { Link } from "react-router-dom";
+import { Movie } from 'types/movie';
 
-function MovieCard() {
+type Props = {
+    movie: Movie;
+}
 
-    const movie = {
-        id: 1,
-        image: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/pe17f8VDfzbvbHSAKAlcORtBHmW.jpg",
-        title: "Alerta Vermelho",
-        count: 2,
-        score: 4.5
-    };
+function MovieCard( { movie } : Props) {
 
     return (
         <div>
